@@ -1,9 +1,10 @@
 import pygame
 import random
 
-PIPE_HEIGHTS = (400, 500, 600)
+
+PIPE_HEIGHTS = (500, 600, 700)
 DURATION = 1200
-GAP = 300
+GAP = 350
 
 
 class Pipes:

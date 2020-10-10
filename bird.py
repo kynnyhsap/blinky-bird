@@ -1,4 +1,5 @@
 import pygame
+
 from constants import SCREEN_HEIGHT
 
 
