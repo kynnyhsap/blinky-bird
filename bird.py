@@ -9,9 +9,9 @@ class Bird:
         self.gravity = 0.2
         self.movement = 0
 
-        upflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-upflap.png").convert())
-        midflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-midflap.png").convert())
-        downflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-downflap.png").convert())
+        upflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-upflap.png").convert_alpha())
+        midflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-midflap.png").convert_alpha())
+        downflap_surface = pygame.transform.scale2x(pygame.image.load("assets/bluebird-downflap.png").convert_alpha())
         self.frames = [upflap_surface, midflap_surface, downflap_surface]
         self.frame_index = 1
 

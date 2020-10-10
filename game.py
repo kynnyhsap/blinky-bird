@@ -92,14 +92,16 @@ class Game:
                     self.quit()
 
                 if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE and self.active:
-                        self.bird.jump()
 
                     if event.key == pygame.K_SPACE and not self.active:
                         self.active = True
                         self.score = 0
                         self.pipes.clear()
                         self.bird.clear_position()
+                        self.bird.jump()
+
+                    if event.key == pygame.K_SPACE and self.active:
+                        self.bird.jump()
 
                 if event.type == Bird.BIRD_FLAP_EVENT:
                     self.bird.flap()
